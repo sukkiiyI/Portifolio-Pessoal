@@ -101,11 +101,13 @@
 /* Título da Página */
 
 h1{
-    background-color: blueviolet;
+    font-family: var(--textos-secundários);
+    color: #BE1A32;
+    background-color: #ffffff;
     text-align: center;
     margin: 5px 0;
     padding: 30px;
-    border: #5f9ea0 10px solid;
+    border: #ffffff 10px solid;
 }
 
 /* Grid da Página */
@@ -114,7 +116,7 @@ h1{
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: 143px 100px 100px;
     justify-content: center;
-    padding: 40px;
+    padding: 10px;
     gap: 30px;
     margin: 60px;
 }
@@ -129,7 +131,7 @@ h1{
 
 .autoretrato1 img{
     width: 350px;
-    border: #ecaa47 5px solid;
+    border: var(--cor-assets2) 2px solid;
     transition: all 0.5s ease-in-out;
 }
 
@@ -145,7 +147,7 @@ h1{
 
 .christian img{
     width: 350px;
-    border: #ecaa47 5px solid;
+    border: var(--cor-assets2) 2px solid;
     transition: all 0.5s ease-in-out;
 }
 
@@ -161,7 +163,7 @@ h1{
 
 .autoretrato2 img{
     width: 350px;
-    border: #ecaa47 5px solid;
+    border: var(--cor-assets2) 2px solid;
     transition: all 0.5s ease-in-out;
 }
 
@@ -188,7 +190,8 @@ h1{
 
 .item_fanart img{
     width: 725px;
-    border: #ecaa47 5px solid; transition: all 0.5s ease-in-out;
+    border: var(--cor-assets2) 2px solid; 
+    transition: all 0.5s ease-in-out;
 }
 
 .item_fanart img:hover{
@@ -203,7 +206,7 @@ h1{
 
 .fundo_amarelo img{
     width: 350px;
-    border: #ecaa47 5px solid;
+    border: var(--cor-assets2) 2px solid;
     transition: all 0.5s ease-in-out;
 }
 
