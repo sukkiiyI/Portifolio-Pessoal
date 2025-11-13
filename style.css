@@ -1,0 +1,295 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1500px;
+}
+
+/* Fontes do projeto */
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=Didact+Gothic&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=Chewy&family=Didact+Gothic&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+/* Variáveis do projeto */
+
+:root{
+    --cor-primaria: #BE1A32;
+    --cor-secundaria: #780313;
+    --cor-assets1: #A7BF66;
+    --cor-assets2: #FF6E84;
+    --cor-background: #EDE9E7;
+    --cor-detalhes: #565F34;
+
+    /* Variáveis de texto */
+    --textos-principais: 'Didact Gothic', sans-serif;
+    --textos-secundários: 'DynaPuff', cursive;
+
+    /* Como usar as variáveis
+    background-color: var(--cor-destaque);
+    font-family: var(--texto-principal); 
+    */
+}
+
+/* MAIN */
+
+main{
+    background-color: #ffe3e8;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* NAV BAR */
+.cabecalho{
+    width: 100%;
+    height: 65px;
+    background-color: var(--cor-primaria);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao_navbar{
+    background-color: var(--cor-primaria);
+    display: flex;
+    color: #ffffff;
+    border: none;
+
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    padding: 6px 32px;
+    border-radius: 8px;
+    font-family: DynaPuff, cursive;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 16px;
+}
+
+.navbar li{
+    list-style: none;
+    background-color: crimson;
+    border: var(--cor-secundaria) solid 1px;
+    padding: 5px;
+    border-radius: 16px;
+    color: #ffffff;
+    font-family: var(--textos-secundários);
+}
+
+.navbar li a{
+    color: #ffffff;
+}
+
+.navbar li:hover{
+    background-color: var(--cor-assets2);
+    border: #ff96a6 2px solid;
+    transition: all 400ms ease-in-out;
+    transform: scale(1.1);
+}
+
+.navbar li:hover a{
+    color: #fcdbe0;
+}
+
+
+.Logo{
+    padding: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* BANNER */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: auto;
+}
+
+.banner img{
+    display: inline-block;
+    background-color: aquamarine;
+    width: 1500px;
+    height: 290px;
+}
+
+
+/* Botões do banner */
+.botoes_do_banner{
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    background-color: #ffffff;
+    padding: 15px;
+    
+}
+
+.botoes_do_banner button{
+    width: 450px;
+    height: 130px;
+    margin: 50px;
+    gap: 50px;
+
+    background-color: #A7BF66;
+    border: #7e8a54 solid 2px;
+
+    font-size: 35px;
+    font-family: var(--textos-secundários);
+}
+
+.botoes_do_banner button a{
+    text-decoration: none;
+    color: #fffdfd;
+}
+
+.botoes_do_banner :hover{
+    background-color: #93ac51;
+    color: #4e572b;
+    transition: all 500ms ease-in-out;
+}
+
+.botoes_do_banner button:hover{
+    border: #555f2f solid 2px;
+    box-shadow: inset 0 0 10px #4e572b;
+}
+
+
+
+
+/* Sobre Mim */
+
+.sobre_mim{
+    background-color: #ffffff;
+    display: flex;
+    padding: auto;
+    margin: 70px;
+    gap: 20px;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 1200px;
+    height: 500px;
+}
+
+.sobre_mim img{
+    width: 440px;
+    height: 500px;
+    border: #BE1A32 2px solid;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.sobre_mim h2{
+    margin: 50px;
+    font-size: 48px;
+    font-family: var(--textos-secundários);
+}
+
+.sobre_mim p{
+    margin: 30px;
+    font-size: 18px;
+    font-family: var(--textos-principais);
+}
+
+.sobre_mim li, a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+
+.desenho_footer {
+    width: 560px;
+}
+
+.Contato{
+    padding: 20px;
+    background-color: #BE1A32;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.email_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: var(--cor-assets2);
+    border: #ff8396 solid 2px;
+}
+
+.email_contato button{
+    display: block;
+    background-color: #ffd1d8;
+    height: 35px;
+    width: 100px;
+    border-radius: 16px;
+    border: #a53a4a 2px solid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+
+}
+
+.redes_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: var(--cor-assets2);
+    border: #ff8396 solid 2px;
+}
+
+.Contato h3,p{
+    padding: auto;
+}
+
+.Contato h3{
+    color: #ffffff;
+    font-family: var(--textos-secundários);
+    font-size: 26px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Contato p{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: var(--textos-principais);
+    margin: 20px;
+    padding: 10px;
+}
+
+.Contato li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.linkedin{
+    margin: 2px;
+    color: #ffffff;
+    gap: 2px;
+}
+
+.github{
+    margin: 7px;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}

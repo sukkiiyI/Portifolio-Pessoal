@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes do projeto */
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=Didact+Gothic&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+/* Variáveis do projeto */
+
+:root{
+    --cor-primaria: #BE1A32;
+    --cor-secundaria: #780313;
+    --cor-assets1: #A7BF66;
+    --cor-assets2: #FF6E84;
+    --cor-background: #EDE9E7;
+    --cor-detalhes: #565F34;
+
+    /* Variáveis de texto */
+    --textos-principais: 'Didact Gothic', sans-serif;
+    --textos-secundários: 'DynaPuff', cursive;
+
+    /* Como usar as variáveis
+    background-color: var(--cor-destaque);
+    font-family: var(--texto-principal); 
+    */
+}
+
+/* NAV BAR */
+.cabecalho{
+    width: 100%;
+    height: 65px;
+    background-color: var(--cor-primaria);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao_navbar{
+    background-color: var(--cor-primaria);
+    display: flex;
+    color: #ffffff;
+    border: none;
+
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    padding: 6px 32px;
+    border-radius: 8px;
+    font-family: DynaPuff, cursive;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 16px;
+}
+
+.navbar li{
+    list-style: none;
+    background-color: crimson;
+    border: var(--cor-secundaria) solid 1px;
+    padding: 5px;
+    border-radius: 16px;
+    color: #ffffff;
+    font-family: var(--textos-secundários);
+}
+
+.navbar li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar li:hover{
+    background-color: var(--cor-assets2);
+    border: #ff96a6 2px solid;
+    transition: all 400ms ease-in-out;
+    transform: scale(1.1);
+}
+
+.navbar li:hover a{
+    color: #fcdbe0;
+}
+
+
+.Logo{
+    padding: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Título principal */
+
+h1{
+    background-color: #d959f3;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    border: #5f9ea0 10px solid;
+}
+
+/* Parte que mostra a foto do projeto geral */
+
+.imagem_principal{
+    display: inline-block;
+    border-radius: 16px;
+    background-color: aquamarine;
+    width: 1000px;
+    height: 300px;
+    margin: 20px;
+
+}
+
+.dados_projeto{
+    margin: 20px;
+    display: flex;
+    width: 75vw;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dados_projeto_info{
+    width: 700px;
+    height: 150px;
+    padding: 15px;
+    border: 3px solid #000000;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    background-color: #7fffd4;
+}
+
+.detalhes_projeto{
+    background-color: #f9ffa0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin: 12px;
+}
+
+.detalhes_projeto .item_1{
+    display: inline-block;
+    background-color: #d35e6e;
+    width: 326px;
+    height: 172px;
+}
+
+.detalhes_projeto .item_2{
+    display: inline-block;
+    background-color: #665ed3;
+    width: 326px;
+    height: 172px;
+}
+
+.detalhes_projeto .item_3{
+    display: inline-block;
+    background-color: #b4d35e;
+    width: 326px;
+    height: 172px;
+}
+
+.detalhes_projeto .botao_repositorio{
+    background-color: #e9be53;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.botao_repositorio button{
+    background-color: #565F34;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+/* FOOTER */
+
+.desenho_footer {
+    width: 560px;
+}
+
+.Contato{
+    padding: 20px;
+    background-color: #BE1A32;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.email_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: var(--cor-assets2);
+    border: #ff8396 solid 2px;
+}
+
+.email_contato button{
+    display: block;
+    background-color: #ffd1d8;
+    height: 35px;
+    width: 100px;
+    border-radius: 16px;
+    border: #a53a4a 2px solid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+
+}
+
+.email_contato a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.redes_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: var(--cor-assets2);
+    border: #ff8396 solid 2px;
+}
+
+.Contato h3,p{
+    padding: auto;
+}
+
+.Contato h3{
+    color: #ffffff;
+    font-family: var(--textos-secundários);
+    font-size: 26px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Contato p{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: var(--textos-principais);
+    margin: 20px;
+    padding: 10px;
+}
+
+.Contato li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.linkedin{
+    margin: 2px;
+    color: #ffffff;
+    gap: 2px;
+}
+
+.github{
+    margin: 7px;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}

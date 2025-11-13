@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1500px;
+}
+
+/* Fontes do projeto */
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Calistoga&family=Didact+Gothic&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+/* Variáveis do projeto */
+
+:root{
+    --cor-primaria: #BE1A32;
+    --cor-secundaria: #780313;
+    --cor-assets1: #A7BF66;
+    --cor-assets2: #FF6E84;
+    --cor-background: #EDE9E7;
+    --cor-detalhes: #565F34;
+
+    /* Variáveis de texto */
+    --textos-principais: 'Didact Gothic', sans-serif;
+    --textos-secundários: 'DynaPuff', cursive;
+
+    /* Como usar as variáveis
+    background-color: var(--cor-destaque);
+    font-family: var(--texto-principal); 
+    */
+}
+
+/* FOOTER */
+
+.desenho_footer {
+    width: 600px;
+}
+
+.Contato{
+    padding: 20px;
+    background-color: #BE1A32;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.email_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: var(--cor-assets2);
+    border: #ff8396 solid 2px;
+}
+
+.email_contato button{
+    display: block;
+    background-color: #ffd1d8;
+    height: 35px;
+    width: 100px;
+    border-radius: 16px;
+    border: #a53a4a 2px solid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+
+}
+
+.redes_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: var(--cor-assets2);
+    border: #ff8396 solid 2px;
+}
+
+.Contato h3,p{
+    padding: auto;
+}
+
+.Contato h3{
+    color: #ffffff;
+    font-family: var(--textos-secundários);
+    font-size: 26px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Contato p{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: var(--textos-principais);
+    margin: 20px;
+    padding: 10px;
+}
+
+.Contato li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.linkedin{
+    margin: 2px;
+    color: #ffffff;
+    gap: 2px;
+}
+
+.github{
+    margin: 7px;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
